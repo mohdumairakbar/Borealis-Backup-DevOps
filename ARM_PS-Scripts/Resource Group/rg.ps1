@@ -1,4 +1,4 @@
-$rgname="BRS-EUW-RSG-D-AKS"
+$rgname="BRS-EUW-RSG-D-SPOKE-AKS"
 $location="westeurope"
 try
 {
