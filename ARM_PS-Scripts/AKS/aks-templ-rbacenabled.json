@@ -220,7 +220,7 @@
         {
             "type": "Microsoft.ContainerService/managedClusters",
             "name": "[parameters('resourceName')]",
-            "apiVersion": "2018-03-31",
+            "apiVersion": "2019-08-01",
             "location": "[parameters('location')]",
             "tags": {},
             "dependsOn": [
@@ -247,7 +247,8 @@
                         "maxPods": "[parameters('maxPods')]",
 						"enableAutoScaling": "[parameters('enableAutoScaling')]",
 						"maxCount": "[parameters('MaxNodes')]",
-						"minCount": "[parameters('MinNodes')]"
+						"minCount": "[parameters('MinNodes')]",
+						"type": "VirtualMachineScaleSets"
                     }
                 ],
                 "servicePrincipalProfile": {
