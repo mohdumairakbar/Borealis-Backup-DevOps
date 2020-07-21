@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourceName": {
+      "value": "BRS-EUW-D-AKS-POC-CLUSTER"
+    },
+    "location": {
+      "value": "westeurope"
+    },
+    "dnsPrefix": {
+      "value": "BRS-EUW-D-AKS-POC-CLUSTER-dns"
+    },
+    "osDiskSizeGB": {
+      "value": 40
+    },
+    "agentCount": {
+      "value": 1
+    },
+    "agentVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "existingServicePrincipalObjectId": {
+      "value": "b578b7ae-73ed-4a38-bc6f-ae8886fe482d"
+    },
+    "existingServicePrincipalClientId": {
+      "value": "1869b7bf-b74f-4d48-a9ff-731b5dbfef3e"
+    },
+    "existingServicePrincipalClientSecret": {
+      "value": "wrMCee-El~r6adGTW47XyMwhr~leX.K5.o"
+    },
+    "osType": {
+      "value": "Linux"
+    },
+    "kubernetesVersion": {
+      "value": "1.16.10"
+    },
+    "enableHttpApplicationRouting": {
+      "value": null
+    },
+    "networkPlugin": {
+      "value": "azure"
+    },
+    "networkPolicy": {
+      "value": "azure"
+    },
+    "maxPods": {
+      "value": 30
+    },
+    "enableRBAC": {
+      "value": true
+    },
+    "existingVirtualNetworkName": {
+      "value": "BRS-EUW-VNT-D-SPOKE01"
+    },
+    "existingVirtualNetworkResourceGroup": {
+      "value": "BRS-EUW-RSG-D-SPOKE-NETWORK"
+    },
+    "existingSubnetName": {
+      "value": "BRS-EUW-SNT-D-AKS"
+    },
+    "serviceCidr": {
+      "value": "10.0.0.0/16"
+    },
+    "dnsServiceIP": {
+      "value": "10.0.0.10"
+    },
+    "dockerBridgeCidr": {
+      "value": "172.17.0.1/16"
+    },
+    "clientAppID": {
+      "value": "91b5d75b-0fc7-4fef-832c-12ec6f8b728e"
+    },
+    "serverAppID": {
+      "value": "8ca8079a-aa63-4a94-b893-651ce3ef97d9"
+    },
+    "serverAppSecret": {
+      "value": "9wyZA-.gA1do3.N7sAG1wRwyW672jWl_.E"
+    },
+    "tenantID": {
+      "value": "ce5330fc-da76-4db0-8b83-9dfdd963f09a"
+    },
+    "enableAutoScaling": {
+      "value": true
+    },
+    "MinNodes": {
+      "value": 1
+    },
+    "MaxNodes": {
+      "value": 2
+    }
+  }
+}
