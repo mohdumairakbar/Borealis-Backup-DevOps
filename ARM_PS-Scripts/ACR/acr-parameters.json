@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "acrName": {
-      "value": "BRS-EUW-D-ACR"
+      "value": "BRSEUWACRD01"
     },
     "acrAdminUserEnabled": {
       "value": false
