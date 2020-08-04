@@ -3,19 +3,21 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "keyVaultName": {
-        "value": "BRS-EUW-KV-D-KEY-MGMT01"
+        "value": "BRS-EUW-KV-D-KEY-MGMT"
 	  },
       "location": {
         "value": "westeurope"
       },
       "objectId": {
-        "value": "0dde74a3-8ba0-4449-9681-5203358fcfb3"
+        "value": "f27ca348-4ea8-48e8-8188-e91a6e7a2c84"
       },
       "secretName": {
-        "value": "DBStringsecret"
+        "value": "EMPDBConStringSecret"
       },
       "secretValue": {
-        "value": "Server=tcp:borealisserver1.database.windows.net,1433;Initial Catalog=Employees;Persist Security Info=False;User ID=borealisadmin1;Password=borealispassword@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+        "value": "Server=tcp:brseuwsqldbdpoc01.database.windows.net,1433;Initial Catalog=EMPDB01;Persist Security Info=False;User ID=borealisadmin;Password=borealispassword@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
       }
     }
   }
+  
+  
