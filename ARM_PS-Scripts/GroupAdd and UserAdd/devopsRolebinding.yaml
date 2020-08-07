@@ -1,0 +1,21 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"rbac.authorization.k8s.io/v1","kind":"RoleBinding","metadata":{"annotations":{},"name":"devops-dotnet-binding","namespace":"dotnetcore-ns"},"roleRef":{"apiGroup":"rbac.authorization.k8s.io","kind":"Role","name":"developerrole"},"subjects":[{"kind":"Group","name":"68693837-37cd-4c75-84f3-f001140eadb0","namespace":"dotnetcore-ns"}]}
+  creationTimestamp: "2020-07-27T08:03:24Z"
+  name: devops-dotnet-binding
+  namespace: dotnetcore-ns
+  resourceVersion: "962274"
+  selfLink: /apis/rbac.authorization.k8s.io/v1/namespaces/dotnetcore-ns/rolebindings/devops-dotnet-binding
+  uid: e8fde2f6-1ba5-45a8-837f-07f67c030bf3
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: devopsrole
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: 2cda7e34-08f4-4cfb-bbc4-8b676425f557
+  namespace: dotnetcore-ns
