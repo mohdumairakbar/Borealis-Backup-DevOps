@@ -90,7 +90,19 @@ XLA6BL3lB.vUc21pU.LT5esSqzI1~1de1Y
 #
 #To check role & rolebinding
  kubectl get role  -n dotnetcore-ns
- kubectl get rolebinding  -n dotnetcore-ns
+ kubectl get rolebinding  -n dotnetcore-
+ 
+ #To add user in desired group 
+$THIRD_PARTY_GROUP="BRS-EUW-GRP-D-THIRDPARTY"
+	$DOTNETDEVUSER_ID = (Get-AzureRmADUser -SearchString 'Neetima').Id
+	az ad group member add --group $THIRD_PARTY_GROUP --member-id $DOTNETDEVUSER_ID
+
+# To test assigned group’s roles
+	az aks get-credentials --resource-group BRS-EUW-RSG-D-SPOKE-AKS --name BRS-EUW-D-AKS-POC-CLUSTER --overwrite-existing
+	kubectl auth can-i get pods -n dotnetcore-ns
+	kubectl get pods –n dotnetcore-ns
+	kubectl auth can-i delete pods -n dotnetcore-ns
+
 
 
 
