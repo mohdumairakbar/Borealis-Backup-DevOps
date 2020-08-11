@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: RoleBinding
+metadata:
+  name: third-party-role-bindings
+  namespace: dotnetcore-ns
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: third-party-cluster-role
+subjects:
+- kind: Group
+  name: b3131d23-f3b2-4f78-9d0c-de92b7024853
+  apiGroup: rbac.authorization.k8s.io
