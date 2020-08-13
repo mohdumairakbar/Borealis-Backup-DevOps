@@ -19,7 +19,7 @@ echo $DOTNETAPPDEV_ID
 #68693837-37cd-4c75-84f3-f001140eadb0
 
 # Assign role to pull kubeconfig from AKS Cluster
-az role assignment create --assignee $DOTNETAPPDEV_ID --role "Azure Kubernetes Service Cluster User Role" --scope $AKS_ID
+##SASA#az role assignment create --assignee $DOTNETAPPDEV_ID --role "Azure Kubernetes Service Cluster User Role" --scope $AKS_ID
 
 
 
@@ -34,7 +34,7 @@ $admingroupid=$(az ad group create --display-name $DEVOPS_GROUP --mail-nickname 
 echo $admingroupid
  
 # Assign role to pull kubeconfig from AKS Cluster
-az role assignment create --assignee $admingroupid --role "Azure Kubernetes Service Cluster User Role" --scope $AKS_ID 
+##SASA#az role assignment create --assignee $admingroupid --role "Azure Kubernetes Service Cluster User Role" --scope $AKS_ID 
 # Create Kubernetes Role to allow access K8s resources. 
 # kubectl apply -f devops-cluster-role.yaml
 # kubectl apply -f devops-cluster-rolebindings.yaml
@@ -44,7 +44,7 @@ $THIRD_PARTY_ID=$(az ad group create --display-name $THIRD_PARTY_GROUP --mail-ni
 #echo $THIRD_PARTY_ID
 
 # Assign role to pull kubeconfig from AKS Cluster
-az role assignment create --assignee $THIRD_PARTY_ID --role "Azure Kubernetes Service Cluster User Role" --scope $AKS_ID
+##SASA#az role assignment create --assignee $THIRD_PARTY_ID --role "Azure Kubernetes Service Cluster User Role" --scope $AKS_ID
 # Create Kubernetes Role to allow access on dotnetcore-ns and ingress-ns namespace resources. 
 #kubectl apply -f third-party-cluster-role.yaml
 #kubectl apply -f third-party-cluster-role-bindings-dotnetcore-ns.yaml
@@ -56,7 +56,7 @@ $CLOUD_OPS_ID=$(az ad group create --display-name $CLOUD_OPS_GROUP --mail-nickna
 echo $CLOUD_OPS_ID
 #0025e193-0df5-4760-a7d6-6db6ef495398
 # Assign role to pull kubeconfig from AKS Cluster
-az role assignment create --assignee $CLOUD_OPS_ID --role "Contributor" --scope $AKS_ID
+##SASA#az role assignment create --assignee $CLOUD_OPS_ID --role "Contributor" --scope $AKS_ID
 # Create Service Principal for DevOpsApps
 # $SP_PASSWD=$(az ad sp create-for-rbac --name http://$DEVOPS_SPN --role "Azure Kubernetes Service Cluster User Role" --scopes $AKS_ID --query password --output tsv)
 # $CLIENT_ID=$(az ad sp show --id http://$DEVOPS_SPN --query appId --output tsv)
