@@ -15,7 +15,7 @@
       "value": 40
     },
     "agentCount": {
-      "value": 1
+      "value": 3
     },
     "agentVMSize": {
       "value": "Standard_D2_v2"
@@ -84,7 +84,7 @@
       "value": true
     },
     "MinNodes": {
-      "value": 2
+      "value": 3
     },
     "MaxNodes": {
       "value": 5
