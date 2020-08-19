@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourceName": {
+      "value": "BRS-EUW-D-AKS-UPOC-CLUSTER"
+    },
+    "location": {
+      "value": "westeurope"
+    },
+    "dnsPrefix": {
+      "value": "BRS-EUW-D-AKS-UPOC-CLUSTER-dns"
+    },
+    "osDiskSizeGB": {
+      "value": 40
+    },
+    "agentCount": {
+      "value": 1
+    },
+    "agentVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "existingServicePrincipalObjectId": {
+      "value": "bfec5049-906d-4b70-bded-176cfa8e93b3"
+    },
+    "existingServicePrincipalClientId": {
+      "value": "76e953bf-0e76-479f-a493-880e31cf0117"
+    },
+    "existingServicePrincipalClientSecret": {
+      "value": "BgQP1phFQYu036_mEEhd.S._jFRw4_0tOo"
+    },
+    "osType": {
+      "value": "Linux"
+    },
+    "kubernetesVersion": {
+      "value": "1.16.10"
+    },
+    "enableHttpApplicationRouting": {
+      "value": false
+    },
+    "networkPlugin": {
+      "value": "azure"
+    },
+    "networkPolicy": {
+      "value": "azure"
+    },
+    "maxPods": {
+      "value": 30
+    },
+    "enableRBAC": {
+      "value": true
+    },
+    "existingVirtualNetworkName": {
+      "value": "BRS-EUW-VNT-D-SPOKE01"
+    },
+    "existingVirtualNetworkResourceGroup": {
+      "value": "BRS-EUW-RSG-D-SPOKE-NETWORK"
+    },
+    "existingSubnetName": {
+      "value": "BRS-EUW-SNT-D-AKSPOC"
+    },
+    "serviceCidr": {
+      "value": "10.0.0.0/16"
+    },
+    "dnsServiceIP": {
+      "value": "10.0.0.10"
+    },
+    "dockerBridgeCidr": {
+      "value": "172.17.0.1/16"
+    },
+    "clientAppID": {
+      "value": "91b5d75b-0fc7-4fef-832c-12ec6f8b728e"
+    },
+    "serverAppID": {
+      "value": "8ca8079a-aa63-4a94-b893-651ce3ef97d9"
+    },
+    "serverAppSecret": {
+      "value": "9wyZA-.gA1do3.N7sAG1wRwyW672jWl_.E"
+    },
+    "tenantID": {
+      "value": "ce5330fc-da76-4db0-8b83-9dfdd963f09a"
+    },
+    "enableAutoScaling": {
+      "value": true
+    },
+    "MinNodes": {
+      "value": 2
+    },
+    "MaxNodes": {
+      "value": 5
+    }
+  }
+}
