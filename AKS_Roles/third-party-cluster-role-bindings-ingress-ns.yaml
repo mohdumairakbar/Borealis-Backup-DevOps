@@ -9,5 +9,5 @@ roleRef:
   name: third-party-cluster-role
 subjects:
 - kind: Group
-  name: b3131d23-f3b2-4f78-9d0c-de92b7024853
+  name: 484d41dd-81f4-4ad9-b498-fd0e4b4e67d4
   apiGroup: rbac.authorization.k8s.io
