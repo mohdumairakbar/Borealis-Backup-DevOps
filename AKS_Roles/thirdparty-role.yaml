@@ -4,6 +4,6 @@ metadata:
   name: thirdparty-role
   namespace: dotnetcore-ns
 rules:
-- apiGroups: [""]
+- apiGroups: ["*"]
   resources: ["*"]
-  verbs: ["get", "list","watch","create"]
+  verbs: ["get", "list","watch"]
