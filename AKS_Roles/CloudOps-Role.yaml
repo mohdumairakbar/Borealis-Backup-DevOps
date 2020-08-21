@@ -1,8 +1,8 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
+kind: ClusterRole
 metadata:
-  name: cloudopsrole
+  name: cloudops-cluster-role
 rules:
-- apiGroups: [""]
+- apiGroups: ["*"]
   resources: ["*"]
-  verbs: ["get", "list","watch","create"]
+  verbs: ["get", "list","watch","create","update"]
