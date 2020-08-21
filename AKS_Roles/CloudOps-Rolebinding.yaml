@@ -1,13 +1,12 @@
-kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
 metadata:
-  name: cloudops-binding
-  namespace: dotnetcore-ns
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: Role
-  name: cloudopsrole
+  name: cloudops-cluster-rolebinding
 subjects:
 - kind: Group
-  namespace: dotnetcore-ns
   name: 0025e193-0df5-4760-a7d6-6db6ef495398
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: cloudops-cluster-role
+  apiGroup: rbac.authorization.k8s.io
