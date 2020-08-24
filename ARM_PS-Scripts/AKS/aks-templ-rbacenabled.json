@@ -10,7 +10,7 @@
         },
         "location": {
             "type": "string",
-            "defaultValue": "eastus",
+            "defaultValue": "westeurope",
             "metadata": {
                 "description": "The Azure location of the AKS resource."
             }
