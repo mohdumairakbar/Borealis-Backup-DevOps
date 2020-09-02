@@ -4,9 +4,9 @@
 
 $sqlAdminUserName = 'borealisadmin'
 $sqlAdminPassword = $env:SQLDBDEV
-$sqlServerName = "brseuwsqldbdpoc01" # this needs to be all lower case
+$sqlServerName = "brseuwsqldbdpoc06" # this needs to be all lower case
 $resourceGroupName = "BRS-EUW-RSG-D-SPOKE-AKS" 
-$sqlDatabaseName = 'EMPDB05'
+$sqlDatabaseName = 'EMPDB08'
 $location = 'westeurope'
 
 #Write-Host "Creating resource group $resourceGroupName"
