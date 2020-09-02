@@ -1,2 +1,2 @@
-sed -i 's/SQLDBDEV/$(sqldbdev)/g' Database/sql.ps1
+sed -i 's/SQLDBDEV/$(sqldbdev)/g' ARM_PS-Scripts/Database/sql.ps1
 echo '$SQLDBDEV'
