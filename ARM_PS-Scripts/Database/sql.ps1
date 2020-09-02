@@ -3,7 +3,7 @@
 # You'll need to adjust these variables accordingly
 
 $sqlAdminUserName = 'borealisadmin'
-$sqlAdminPassword = SQLDBDEV
+$sqlAdminPassword = $env:SQLDBDEV
 $sqlServerName = "brseuwsqldbdpoc01" # this needs to be all lower case
 $resourceGroupName = "BRS-EUW-RSG-D-SPOKE-AKS" 
 $sqlDatabaseName = 'EMPDB05'
