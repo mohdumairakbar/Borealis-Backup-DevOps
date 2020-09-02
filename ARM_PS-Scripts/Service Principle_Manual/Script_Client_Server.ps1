@@ -20,7 +20,7 @@ az ad sp create --id $serverApplicationId
 
 
 $serverApplicationSecret=$(az ad sp credential reset --name $serverApplicationId --credential-description "AKSPassword" --query password -o tsv)
-ent
+
 #U8RBQZLO2kK9Ok8i4rHNC-3kYL0r8AVTjt
 
 # Add permissions to Read directory data and Sign in and read user profile
