@@ -4,7 +4,7 @@
 
 $sqlAdminUserName = 'borealisadmin'
 $sqlAdminPassword = $env:SQLDBDEV
-$sqlServerName = "brseuwsqldbdpoc07" # this needs to be all lower case
+$sqlServerName = "brseuwsqldbdpoc15" # this needs to be all lower case
 $resourceGroupName = "BRS-EUW-RSG-D-SPOKE-AKS" 
 $sqlDatabaseName = 'EMPDB012'
 $location = 'westeurope'
