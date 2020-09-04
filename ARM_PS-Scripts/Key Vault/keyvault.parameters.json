@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "keyVaultName": {
-        "value": "BRS-EUW-KV-D-KEY-MGMT"
+        "value": "BRS-EUW-KV-D-KEY-MGMT09"
 	  },
       "location": {
         "value": "westeurope"
