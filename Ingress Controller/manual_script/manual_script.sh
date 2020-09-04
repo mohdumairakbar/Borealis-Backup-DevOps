@@ -18,16 +18,6 @@ Commands
 # When the Kubernetes load balancer service is created for the NGINX ingress controller, your internal IP address is assigned.
 •	kubectl get service -l app=nginx-ingress --namespace ingress-ns
 
-Run demo applications
-Commands
-# Run two application in cluster to check ingress controller in action using kubectl apply..
-•	kubectl apply -f aks-helloworld.yaml --namespace ingress-ns
-•	kubectl apply -f ingress-demo.yaml --namespace ingress-ns
-
-Create an ingress route
-Commands
-# Create a ingress resource to route traffic of both application.
-•	kubectl apply -f hello-world-ingress.yaml
 
 Test the ingress controller
 Commands
@@ -35,5 +25,4 @@ Commands
 •	kubectl run -it --rm aks-ingress-test --image=debian --namespace ingress-ns
 # Install curl in the pod using apt-get:
 •	apt-get update && apt-get install -y curl
-•	curl -L http://10.49.0.250
-•	curl -L http://10.49.0.250//hello-world-two
+•	curl -L http://10.49.1.250
