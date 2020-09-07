@@ -11,3 +11,17 @@ subjects:
 - kind: Group
   name: 484d41dd-81f4-4ad9-b498-fd0e4b4e67d4
   apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: RoleBinding
+metadata:
+  name: third-party-role-bindings
+  namespace: ingress-ns
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: third-party-cluster-role
+subjects:
+- kind: Group
+  name: 484d41dd-81f4-4ad9-b498-fd0e4b4e67d4
+  apiGroup: rbac.authorization.k8s.io
